@@ -1,0 +1,39 @@
+line: reactor-2020.0
+bom: io.projectreactor:reactor-bom
+repository: patch-reactor
+members:
+  - io.projectreactor:reactor-bom
+  - io.projectreactor:reactor-core@3.4.41
+  - io.projectreactor:reactor-test@3.4.41
+  - io.projectreactor:reactor-tools@3.4.41
+  - io.projectreactor.addons:reactor-extra@3.4.11
+  - io.projectreactor.addons:reactor-adapter@3.4.11
+  - io.projectreactor.netty:reactor-netty@1.0.48
+  - io.projectreactor.netty:reactor-netty-core@1.0.48
+  - io.projectreactor.netty:reactor-netty-http@1.0.48
+  - io.projectreactor.netty:reactor-netty-http-brave@1.0.48
+  - io.projectreactor.addons:reactor-pool@0.2.13
+  - io.projectreactor.kafka:reactor-kafka@1.3.23
+  - io.projectreactor.rabbitmq:reactor-rabbitmq@1.5.6
+  - io.projectreactor.kotlin:reactor-kotlin-extensions@1.1.11
+repositories:
+  patch-reactor-netty:
+    - io.projectreactor.netty:reactor-netty-core@1.0.48
+    - io.projectreactor.netty:reactor-netty-http-brave@1.0.48
+    - io.projectreactor.netty:reactor-netty-http@1.0.48
+    - io.projectreactor.netty:reactor-netty@1.0.48
+  patch-reactor-addons:
+    - io.projectreactor.addons:reactor-adapter@3.4.11
+    - io.projectreactor.addons:reactor-extra@3.4.11
+  patch-reactor-core:
+    - io.projectreactor:reactor-core@3.4.41
+    - io.projectreactor:reactor-test@3.4.41
+    - io.projectreactor:reactor-tools@3.4.41
+  patch-reactor-kafka:
+    - io.projectreactor.kafka:reactor-kafka@1.3.23
+  patch-reactor-kotlin-extensions:
+    - io.projectreactor.kotlin:reactor-kotlin-extensions@1.1.11
+  patch-reactor-pool:
+    - io.projectreactor.addons:reactor-pool@0.2.13
+  patch-reactor-rabbitmq:
+    - io.projectreactor.rabbitmq:reactor-rabbitmq@1.5.6
